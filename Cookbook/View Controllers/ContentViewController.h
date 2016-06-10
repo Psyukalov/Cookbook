@@ -12,4 +12,6 @@
 
 @interface ContentViewController : UIViewController
 
+- (instancetype)initWithRecipes:(NSDictionary *)recipes;
+
 @end

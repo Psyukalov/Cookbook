@@ -19,10 +19,20 @@
 
 @implementation AppDelegate
 
+@synthesize menu;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Menu"
+                                                     ofType:@"json"];
+    NSString *JSON = [[NSString alloc] initWithContentsOfFile:path
+                                                     encoding:NSUTF8StringEncoding
+                                                        error:nil];
+    menu = [NSJSONSerialization JSONObjectWithData:[JSON dataUsingEncoding:NSUTF8StringEncoding]
+                                           options:kNilOptions
+                                             error:nil];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window setBackgroundColor:[UIColor whiteColor]];
+    [self.window setBackgroundColor:[UIColor blackColor]];
     TypeViewController *typeVC = [[TypeViewController alloc] init];
     self.window.rootViewController = typeVC;
     [self.window makeKeyAndVisible];
