@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ContentViewController.h
 //  Cookbook
 //
 //  Created by Vladimir Psyukalov on 10.06.16.
@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface ContentViewController : UIViewController
 
 @end

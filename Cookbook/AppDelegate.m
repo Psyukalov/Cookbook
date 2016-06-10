@@ -6,17 +6,26 @@
 //  Copyright © 2016 com.NataliaZubareva.Cookbook. All rights reserved.
 //
 
+
 #import "AppDelegate.h"
+
+#import "TypeViewController.h"
+
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
 
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    TypeViewController *typeVC = [[TypeViewController alloc] init];
+    self.window.rootViewController = typeVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

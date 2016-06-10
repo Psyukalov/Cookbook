@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		C726F1F21D0AB33200C80E47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C726F1F11D0AB33200C80E47 /* main.m */; };
 		C726F1F51D0AB33200C80E47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C726F1F41D0AB33200C80E47 /* AppDelegate.m */; };
-		C726F1F81D0AB33200C80E47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C726F1F71D0AB33200C80E47 /* ViewController.m */; };
-		C726F1FB1D0AB33200C80E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C726F1F91D0AB33200C80E47 /* Main.storyboard */; };
 		C726F1FD1D0AB33200C80E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C726F1FC1D0AB33200C80E47 /* Assets.xcassets */; };
-		C726F2001D0AB33200C80E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C726F1FE1D0AB33200C80E47 /* LaunchScreen.storyboard */; };
+		C726F20F1D0AC37800C80E47 /* TypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C726F20D1D0AC37800C80E47 /* TypeViewController.m */; };
+		C726F2101D0AC37800C80E47 /* TypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C726F20E1D0AC37800C80E47 /* TypeViewController.xib */; };
+		C726F2141D0AC3A300C80E47 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C726F2121D0AC3A300C80E47 /* ContentViewController.m */; };
+		C726F2151D0AC3A300C80E47 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C726F2131D0AC3A300C80E47 /* ContentViewController.xib */; };
+		C726F2191D0AC3C600C80E47 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C726F2171D0AC3C600C80E47 /* RecipeViewController.m */; };
+		C726F21A1D0AC3C600C80E47 /* RecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C726F2181D0AC3C600C80E47 /* RecipeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,17 @@
 		C726F1F11D0AB33200C80E47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C726F1F31D0AB33200C80E47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C726F1F41D0AB33200C80E47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C726F1F61D0AB33200C80E47 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C726F1F71D0AB33200C80E47 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C726F1FA1D0AB33200C80E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C726F1FC1D0AB33200C80E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C726F1FF1D0AB33200C80E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C726F2011D0AB33200C80E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C726F20C1D0AC37800C80E47 /* TypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeViewController.h; sourceTree = "<group>"; };
+		C726F20D1D0AC37800C80E47 /* TypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeViewController.m; sourceTree = "<group>"; };
+		C726F20E1D0AC37800C80E47 /* TypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeViewController.xib; sourceTree = "<group>"; };
+		C726F2111D0AC3A300C80E47 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		C726F2121D0AC3A300C80E47 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		C726F2131D0AC3A300C80E47 /* ContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
+		C726F2161D0AC3C600C80E47 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		C726F2171D0AC3C600C80E47 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		C726F2181D0AC3C600C80E47 /* RecipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +68,14 @@
 			children = (
 				C726F1F31D0AB33200C80E47 /* AppDelegate.h */,
 				C726F1F41D0AB33200C80E47 /* AppDelegate.m */,
-				C726F1F61D0AB33200C80E47 /* ViewController.h */,
-				C726F1F71D0AB33200C80E47 /* ViewController.m */,
-				C726F1F91D0AB33200C80E47 /* Main.storyboard */,
 				C726F1FC1D0AB33200C80E47 /* Assets.xcassets */,
-				C726F1FE1D0AB33200C80E47 /* LaunchScreen.storyboard */,
+				C726F2071D0AB95200C80E47 /* Data Classes */,
 				C726F2011D0AB33200C80E47 /* Info.plist */,
+				C726F2081D0AB95200C80E47 /* Resources */,
 				C726F1F01D0AB33200C80E47 /* Supporting Files */,
+				C726F2091D0AB95200C80E47 /* Utility */,
+				C726F20A1D0AB95200C80E47 /* View Controllers */,
+				C726F20B1D0AB95200C80E47 /* Views */,
 			);
 			path = Cookbook;
 			sourceTree = "<group>";
@@ -77,6 +86,50 @@
 				C726F1F11D0AB33200C80E47 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C726F2071D0AB95200C80E47 /* Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Classes";
+			sourceTree = "<group>";
+		};
+		C726F2081D0AB95200C80E47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C726F2091D0AB95200C80E47 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C726F20A1D0AB95200C80E47 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C726F20C1D0AC37800C80E47 /* TypeViewController.h */,
+				C726F20D1D0AC37800C80E47 /* TypeViewController.m */,
+				C726F20E1D0AC37800C80E47 /* TypeViewController.xib */,
+				C726F2111D0AC3A300C80E47 /* ContentViewController.h */,
+				C726F2121D0AC3A300C80E47 /* ContentViewController.m */,
+				C726F2131D0AC3A300C80E47 /* ContentViewController.xib */,
+				C726F2161D0AC3C600C80E47 /* RecipeViewController.h */,
+				C726F2171D0AC3C600C80E47 /* RecipeViewController.m */,
+				C726F2181D0AC3C600C80E47 /* RecipeViewController.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C726F20B1D0AB95200C80E47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +163,7 @@
 				TargetAttributes = {
 					C726F1EC1D0AB33200C80E47 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = T2J773RMHH;
 					};
 				};
 			};
@@ -136,9 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C726F2001D0AB33200C80E47 /* LaunchScreen.storyboard in Resources */,
+				C726F21A1D0AC3C600C80E47 /* RecipeViewController.xib in Resources */,
+				C726F2101D0AC37800C80E47 /* TypeViewController.xib in Resources */,
 				C726F1FD1D0AB33200C80E47 /* Assets.xcassets in Resources */,
-				C726F1FB1D0AB33200C80E47 /* Main.storyboard in Resources */,
+				C726F2151D0AC3A300C80E47 /* ContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C726F1F81D0AB33200C80E47 /* ViewController.m in Sources */,
+				C726F2141D0AC3A300C80E47 /* ContentViewController.m in Sources */,
 				C726F1F51D0AB33200C80E47 /* AppDelegate.m in Sources */,
+				C726F20F1D0AC37800C80E47 /* TypeViewController.m in Sources */,
 				C726F1F21D0AB33200C80E47 /* main.m in Sources */,
+				C726F2191D0AC3C600C80E47 /* RecipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C726F1F91D0AB33200C80E47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C726F1FA1D0AB33200C80E47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C726F1FE1D0AB33200C80E47 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C726F1FF1D0AB33200C80E47 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C726F2021D0AB33200C80E47 /* Debug */ = {
@@ -263,10 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Cookbook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NataliaZubareva.Cookbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -274,10 +316,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Cookbook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NataliaZubareva.Cookbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
