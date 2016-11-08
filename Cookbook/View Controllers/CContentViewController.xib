@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CContentViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="nq1-8J-gec" id="Wkp-ec-VSA"/>
+                <outlet property="collectionView" destination="Qit-WC-sPE" id="FiO-0G-cHw"/>
+                <outlet property="labelDescription" destination="gPz-dV-WhB" id="SeD-ds-biM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qit-WC-sPE">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="Btr-lW-oAS">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fMV-sd-5W0"/>
+                        <outlet property="delegate" destination="-1" id="kxa-sX-7IF"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPz-dV-WhB">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.51612311239999997" green="0.078431372550000003" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nq1-8J-gec"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gPz-dV-WhB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2vj-1j-VVk"/>
+                <constraint firstItem="gPz-dV-WhB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5lr-j9-WxF"/>
+                <constraint firstItem="Qit-WC-sPE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Bo-GD-EI8"/>
+                <constraint firstItem="nq1-8J-gec" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GZM-2K-alh"/>
+                <constraint firstAttribute="bottom" secondItem="Qit-WC-sPE" secondAttribute="bottom" id="ekf-94-Tnj"/>
+                <constraint firstItem="Qit-WC-sPE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ffF-DP-caT"/>
+                <constraint firstAttribute="trailing" secondItem="Qit-WC-sPE" secondAttribute="trailing" id="i5p-d8-d1n"/>
+                <constraint firstItem="nq1-8J-gec" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oOv-yk-14O"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

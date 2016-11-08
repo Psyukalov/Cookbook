@@ -9,7 +9,10 @@
 
 #import "AppDelegate.h"
 
-#import "TypeViewController.h"
+#import "CTypeViewController.h"
+#import "CPreviewViewController.h"
+
+#import "Utils.h"
 
 
 @interface AppDelegate ()
@@ -21,6 +24,8 @@
 
 @synthesize menu;
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Menu"
@@ -31,10 +36,25 @@
     menu = [NSJSONSerialization JSONObjectWithData:[JSON dataUsingEncoding:NSUTF8StringEncoding]
                                            options:kNilOptions
                                              error:nil];
+    NSArray *array = menu[@"menu"];
+    CTypeViewController *typeVC = [[CTypeViewController alloc] initWithMenu:array];
+    CPreviewViewController *previewVC = [[CPreviewViewController alloc] init];
+    UINavigationController *typeNC = [[UINavigationController alloc] initWithRootViewController:typeVC];
+    UINavigationController *previewNC = [[UINavigationController alloc] initWithRootViewController:previewVC];
+    NSDictionary *textAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor],
+                                     NSFontAttributeName : [UIFont systemFontOfSize:18.f
+                                                                             weight:UIFontWeightLight]};
+    [Utils applyNavigationBarDesignWithTranslucent:NO
+                               withBackgroundColor:RGB(182.f, 72.f, 132.f)
+                                withTextAttributes:textAttributes];
+    UISplitViewController *mainSVC = [[UISplitViewController alloc] init];
+    [mainSVC setViewControllers:@[typeNC, previewNC]];
+    [mainSVC setMinimumPrimaryColumnWidth:0.f];
+    [mainSVC setMaximumPrimaryColumnWidth:mainSVC.view.frame.size.width / 2];
+    [mainSVC setPreferredPrimaryColumnWidthFraction:.24f];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor blackColor]];
-    TypeViewController *typeVC = [[TypeViewController alloc] init];
-    self.window.rootViewController = typeVC;
+    self.window.rootViewController = mainSVC;
     [self.window makeKeyAndVisible];
     return YES;
 }
